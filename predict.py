@@ -13,7 +13,7 @@ from signals import (
 )
 
 # ── Configuration (must match train.py) ───────────────────────────────────────
-ROBERTA_DIR     = "models/roberta"
+ROBERTA_DIR = "Devika2006/fake-news-credibility-roberta"
 META_MODEL_PATH = "models/meta_clf.pkl"
 MAX_LENGTH      = 128
 LABEL_NAMES     = ["REAL", "MIXED", "FAKE"]
