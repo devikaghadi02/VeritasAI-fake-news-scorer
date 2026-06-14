@@ -2,9 +2,6 @@
 
 A multi-signal AI system that analyzes news articles and statements for credibility using three independent signals: deep language understanding, writing style analysis, and source reputation scoring.
 
-## Live Demo
-[Click here to try the app](https://veritasai-fake-news-scorer.streamlit.app/)
-
 ## How It Works
 The app uses a 3-signal pipeline to score credibility:
 1. **RoBERTa text model** — Fine-tuned transformer that reads the actual words and detects linguistic patterns associated with misinformation
