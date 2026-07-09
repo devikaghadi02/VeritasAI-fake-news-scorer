@@ -5,7 +5,7 @@
 import numpy as np
 import joblib
 import torch
-from transformers import RobertaTokenizer, RobertaForSequenceClassification
+from transformers import AutoTokenizer, RobertaForSequenceClassification
 from newspaper import Article                    # extracts article from URL
 from signals import (
     style_features_to_array,
@@ -35,7 +35,7 @@ LABEL_INFO = {
 def load_roberta():
     """Load the fine-tuned RoBERTa model and tokenizer from disk."""
     print("Loading RoBERTa model...")
-    tokenizer = RobertaTokenizer.from_pretrained(ROBERTA_DIR)
+    tokenizer = AutoTokenizer.from_pretrained(ROBERTA_DIR)
     model = RobertaForSequenceClassification.from_pretrained(ROBERTA_DIR)
     model.eval()   # evaluation mode — disables dropout
     return model, tokenizer
