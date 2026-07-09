@@ -4,9 +4,12 @@ __pycache__/
 *.pyc
 *.pyo
 data/
-models/
+models/*
 *.zip
 *.pkl
 .env
 *.dll
 *.pyd
+
+#Eceptions: track the meta-classifier despite the rules above
+!models/meta_clf.pkl

@@ -35,8 +35,8 @@ LABEL_INFO = {
 def load_roberta():
     """Load the fine-tuned RoBERTa model and tokenizer from disk."""
     print("Loading RoBERTa model...")
-    tokenizer = RobertaTokenizer.from_pretrained(ROBERTA_DIR, local_files_only=True)
-    model = RobertaForSequenceClassification.from_pretrained(ROBERTA_DIR, local_files_only=True)
+    tokenizer = RobertaTokenizer.from_pretrained(ROBERTA_DIR)
+    model = RobertaForSequenceClassification.from_pretrained(ROBERTA_DIR)
     model.eval()   # evaluation mode — disables dropout
     return model, tokenizer
 
